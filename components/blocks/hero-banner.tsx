@@ -32,13 +32,13 @@ const heroFeatures: HeroFeature[] = [
 
 function FeatureCard({ feature }: { feature: HeroFeature }) {
   return (
-    <div className="group relative h-full overflow-hidden rounded-2xl border border-white/10 bg-black/45 p-5 backdrop-blur-md transition-all hover:-translate-y-0.5 hover:border-brand/40 hover:bg-black/60">
+    <div className="group relative h-full overflow-hidden rounded-2xl border border-ink/10 bg-surface-base/60 p-5 backdrop-blur-md transition-all hover:-translate-y-0.5 hover:border-brand/40 hover:bg-surface-base/80">
       <div className="flex items-start gap-3">
-        <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-white/10 bg-white/5">
+        <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-ink/10 bg-ink/5">
           <feature.icon className="h-[18px] w-[18px] text-brand" />
         </div>
         <div className="min-w-0">
-          <h3 className="text-[15px] font-semibold text-white">{feature.title}</h3>
+          <h3 className="text-[15px] font-semibold text-ink">{feature.title}</h3>
           <p className="mt-1 text-[13px] leading-relaxed text-gray-400">{feature.description}</p>
         </div>
       </div>
@@ -69,11 +69,11 @@ export function HeroBanner() {
 
       <div className="mx-auto flex min-h-[78vh] w-full max-w-[92rem] flex-col px-6 pb-10 sm:px-10 lg:px-14 xl:px-20">
         <div className="mt-auto pt-[100px]">
-          <h1 className="max-w-5xl text-[2.5rem] leading-[1.02] font-semibold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-[5.25rem]">
-            <span className="block text-white/85">Own a slice of</span>
+          <h1 className="max-w-5xl text-[2.5rem] leading-[1.02] font-semibold tracking-tight text-ink sm:text-5xl md:text-6xl lg:text-[5.25rem]">
+            <span className="block text-ink/85">Own a slice of</span>
             <span className="block">
               <span className="font-display italic font-medium text-brand">premium</span>{' '}
-              <span className="text-white/85">real estate,</span>
+              <span className="text-ink/85">real estate,</span>
             </span>
             <span className="block">tokenized and fractional.</span>
           </h1>
@@ -81,7 +81,7 @@ export function HeroBanner() {
           <p className="mt-8 max-w-2xl text-base leading-relaxed text-gray-300/90 sm:text-lg">
             BlockEstate revolutionizes property investment through fractional ownership. Buy a
             verified share of premium real estate with crypto, starting from just{' '}
-            <span className="font-semibold text-white">$100</span>.
+            <span className="font-semibold text-ink">$100</span>.
           </p>
 
           <div className="mt-9 flex flex-wrap gap-3">
@@ -99,7 +99,7 @@ export function HeroBanner() {
               asChild
               size="lg"
               variant="outline"
-              className="h-11 rounded-full border-white/15 bg-white/5 px-6 text-sm font-semibold text-white backdrop-blur-md hover:bg-white/10 hover:text-white"
+              className="h-11 rounded-full border-ink/15 bg-ink/5 px-6 text-sm font-semibold text-ink backdrop-blur-md hover:bg-ink/10 hover:text-ink"
             >
               <Link href="/properties">Browse Properties</Link>
             </Button>

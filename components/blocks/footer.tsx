@@ -20,7 +20,7 @@ export function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="border-t border-white/10 bg-surface-base">
+    <footer className="border-t border-ink/10 bg-surface-base">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Top — brand + Platform column */}
         <div className="grid gap-12 py-16 md:grid-cols-12 md:gap-16 lg:py-20">
@@ -28,7 +28,7 @@ export function Footer() {
             <Link
               href="/"
               aria-label="BlockEstate home"
-              className="text-[22px] font-semibold tracking-tight text-white"
+              className="text-[22px] font-semibold tracking-tight text-ink"
             >
               Block<span className="font-display italic font-medium text-brand">Estate</span>
             </Link>
@@ -47,7 +47,7 @@ export function Footer() {
                 <li key={link.label}>
                   <Link
                     href={link.href}
-                    className="text-sm text-gray-300 transition-colors hover:text-white"
+                    className="text-sm text-gray-300 transition-colors hover:text-ink"
                   >
                     {link.label}
                   </Link>
@@ -58,7 +58,7 @@ export function Footer() {
         </div>
 
         {/* Bottom — copyright + socials */}
-        <div className="flex flex-col-reverse items-start gap-6 border-t border-white/10 py-6 sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex flex-col-reverse items-start gap-6 border-t border-ink/10 py-6 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-[13px] text-gray-500">
             © {currentYear} BlockEstate. All rights reserved.
           </p>
@@ -70,7 +70,7 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={social.label}
-                  className="flex h-9 w-9 items-center justify-center rounded-full text-gray-400 transition-colors hover:bg-white/[0.05] hover:text-white"
+                  className="flex h-9 w-9 items-center justify-center rounded-full text-gray-400 transition-colors hover:bg-ink/[0.05] hover:text-ink"
                 >
                   <social.icon className="h-4 w-4" aria-hidden="true" />
                 </a>

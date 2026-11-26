@@ -17,10 +17,10 @@ type ToastSeverityStyles = {
 
 const toastSeverityClassNames: Record<ToastSeverity, ToastSeverityStyles> = {
   info: {
-    root: 'border-white/10 bg-gray-950',
-    title: 'text-white',
+    root: 'border-ink/10 bg-gray-950',
+    title: 'text-ink',
     description: 'text-gray-300',
-    close: 'text-gray-400 hover:text-white focus-visible:ring-white/40',
+    close: 'text-gray-400 hover:text-ink focus-visible:ring-ink/40',
   },
   success: {
     root: 'border-l-4 border-emerald-500/70 bg-emerald-950/90 ring-1 ring-emerald-400/25',
@@ -49,7 +49,7 @@ const ToastRoot = React.forwardRef<
   <ToastPrimitive.Root
     ref={ref}
     className={cn(
-      'group pointer-events-auto relative flex w-full items-start justify-between gap-3 overflow-hidden rounded-lg border border-white/10 bg-gray-950 p-4 text-white shadow-lg shadow-black/30 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-80 data-[state=open]:slide-in-from-top-full data-[state=closed]:slide-out-to-right-full sm:max-w-sm sm:data-[state=open]:slide-in-from-bottom-full',
+      'group pointer-events-auto relative flex w-full items-start justify-between gap-3 overflow-hidden rounded-lg border border-ink/10 bg-gray-950 p-4 text-ink shadow-lg shadow-black/30 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-80 data-[state=open]:slide-in-from-top-full data-[state=closed]:slide-out-to-right-full sm:max-w-sm sm:data-[state=open]:slide-in-from-bottom-full',
       className,
     )}
     {...props}

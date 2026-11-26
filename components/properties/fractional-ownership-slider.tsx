@@ -110,7 +110,7 @@ export function FractionalOwnershipSlider({
           <p
             className={cn(
               'flex items-center gap-2 font-semibold',
-              marketPriceStatus === 'live' && 'text-emerald-300',
+              marketPriceStatus === 'live' && 'text-emerald-700 dark:text-emerald-300',
               marketPriceStatus === 'loading' && 'text-gray-400',
               marketPriceStatus === 'fallback' && 'text-amber-300',
             )}
@@ -128,7 +128,7 @@ export function FractionalOwnershipSlider({
           </p>
           <p className="mt-1 text-[11px] text-gray-500">{marketStatusCopy.detail}</p>
         </div>
-        <p className="shrink-0 font-mono text-sm font-bold text-white">
+        <p className="shrink-0 font-mono text-sm font-bold text-ink">
           {usdFormatter.format(effectiveCryptoPrice)}
         </p>
       </div>
@@ -150,19 +150,19 @@ export function FractionalOwnershipSlider({
           <p className="text-[10.5px] font-semibold uppercase tracking-wider text-gray-500">
             Tokens
           </p>
-          <p className="mt-1 text-base font-bold text-white">{tokens}</p>
+          <p className="mt-1 text-base font-bold text-ink">{tokens}</p>
         </div>
         <div>
           <p className="text-[10.5px] font-semibold uppercase tracking-wider text-gray-500">
             USD Value
           </p>
-          <p className="mt-1 text-base font-bold text-white">{usdFormatter.format(usdValue)}</p>
+          <p className="mt-1 text-base font-bold text-ink">{usdFormatter.format(usdValue)}</p>
         </div>
         <div>
           <p className="text-[10.5px] font-semibold uppercase tracking-wider text-gray-500">
             {cryptoSymbol} Equivalent
           </p>
-          <p className="mt-1 text-base font-bold text-white">
+          <p className="mt-1 text-base font-bold text-ink">
             {cryptoValue.toFixed(4)} {cryptoSymbol}
           </p>
         </div>
@@ -170,14 +170,14 @@ export function FractionalOwnershipSlider({
           <p className="text-[10.5px] font-semibold uppercase tracking-wider text-gray-500">
             Ownership Percentage
           </p>
-          <p className="mt-1 text-base font-bold text-emerald-300">
+          <p className="mt-1 text-base font-bold text-emerald-700 dark:text-emerald-300">
             {ownershipPercentage.toFixed(2)}%
           </p>
         </div>
       </div>
 
       {/* Ownership progress */}
-      <div className="mt-6 h-1.5 overflow-hidden rounded-full bg-white/[0.08]">
+      <div className="mt-6 h-1.5 overflow-hidden rounded-full bg-ink/[0.08]">
         <div
           className="h-full rounded-full bg-gradient-to-r from-brand to-brand-soft transition-all duration-300 ease-in-out"
           style={{ width: `${ownershipPercentage}%` }}

@@ -23,7 +23,7 @@ export function SectionHeader({
       {eyebrow ? <Eyebrow>{eyebrow}</Eyebrow> : null}
       <h2
         className={cn(
-          'text-3xl font-bold tracking-tight text-white sm:text-4xl md:text-5xl',
+          'text-3xl font-bold tracking-tight text-ink sm:text-4xl md:text-5xl',
           eyebrow && 'mt-5',
         )}
       >

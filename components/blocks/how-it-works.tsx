@@ -45,10 +45,10 @@ export function HowItWorks() {
           {steps.map((step) => (
             <article
               key={step.title}
-              className="group rounded-2xl bg-white/[0.025] p-8 transition-colors hover:bg-white/[0.045]"
+              className="group rounded-2xl bg-ink/[0.025] p-8 transition-colors hover:bg-ink/[0.045]"
             >
               <step.icon className="h-10 w-10 text-brand" strokeWidth={1.5} aria-hidden="true" />
-              <h3 className="mt-7 text-xl font-semibold text-white">{step.title}</h3>
+              <h3 className="mt-7 text-xl font-semibold text-ink">{step.title}</h3>
               <p className="mt-3 text-[14px] leading-relaxed text-gray-400">{step.description}</p>
               <Link
                 href={step.href}

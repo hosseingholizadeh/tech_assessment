@@ -13,7 +13,7 @@ export function VisionMission() {
           {/* Our Vision — text on top, image below */}
           <div className="flex flex-col gap-8">
             <div>
-              <h3 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+              <h3 className="text-3xl font-bold tracking-tight text-ink sm:text-4xl">
                 Our Vision
               </h3>
               <p className="mt-4 text-[15px] leading-relaxed text-gray-400 sm:text-base">
@@ -46,7 +46,7 @@ export function VisionMission() {
               />
             </div>
             <div className="order-1 md:order-2">
-              <h3 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+              <h3 className="text-3xl font-bold tracking-tight text-ink sm:text-4xl">
                 Our Mission
               </h3>
               <p className="mt-4 text-[15px] leading-relaxed text-gray-400 sm:text-base">

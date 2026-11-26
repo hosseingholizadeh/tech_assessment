@@ -6,6 +6,7 @@ import { ToastProvider } from '@/providers/toast-provider'
 import { WalletProvider } from '@/providers/wallet-provider'
 import { Footer } from '@/components/blocks/footer'
 import { Navbar } from '@/components/navigation/navbar'
+import { themeInitScript } from '@/lib/theme/theme'
 
 const geistSans = localFont({
   src: '../public/fonts/GeistVF.woff',
@@ -33,7 +34,10 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-surface-base min-h-screen pt-[68px]`}
       >
